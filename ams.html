@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var n=prompt("enter a number");
+	var m=n.length;
+	var sum=0;
+	var n1=n
+
+	while(n!=0){
+		d=n%10;
+		sum=sum+Math.pow(d,m)
+		n=parseInt(n/10);
+	}
+    document.write(sum);
+    if(n1==sum){
+    	document.write("the number is amstrong");
+    }
+    else{
+    	document.write("the number is not amstrong")
+    }
+</script>
+</body>
+</html>

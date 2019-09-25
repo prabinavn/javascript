@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	//arun's mark
+	var mark1 = new Array(96,84,23);
+	//miduns mark
+    var mark2= new Array(254,76,98);
+function total(){
+	const sum1=mark1[0]+mark1[1]+mark1[2];
+	const sum2=mark2[0]+mark2[1]+mark2[2];
+	document.write("mark for arun is:"+mark1+"<br>");
+	document.write("total is:"+sum1+"<br>")
+	document.write("mark for midhun is:"+mark2+"<br>");
+	document.write("total is:"+sum2);
+	const sub1=sum1-sum2;
+	const sub2=sum2-sum1;
+
+	setTimeout(()=>{
+		if(sum1>sum2){
+			alert("arun got "+sub1+" marks than midhun");
+		}
+		else{
+			alert("midhun got "+sub2+" marks than arun");
+		}
+	},500);
+}
+total();
+</script>
+</body>
+</html>

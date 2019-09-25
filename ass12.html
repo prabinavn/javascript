@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var champion="apple";//global
+	 function printChampion(){
+	 	document.write("<h1>Global</h1>")
+	 	document.write(champion + ' inside the function<br>');
+	 }
+	 printChampion();
+	 document.write(champion + ' outside the function');
+     
+
+	 function printChampions(){
+	 	document.write("<h1>Local</h1>")
+	   var champion="apple";//local
+	 	document.write(champion + ' inside the function<br>');
+	 	 
+	 }
+	 printChampions();
+	 	 
+
+</script>
+</body>
+</html>
